@@ -23,7 +23,7 @@ jobs:
         with:
           name: octomatch
           path: dist
-  deploy:
+  dev:
     name: Deploy Dev
     needs: build
     runs-on: ubuntu-latest
@@ -37,3 +37,5 @@ jobs:
           echo "Downloaded artifact contents:"
           tree website
           echo "Demo deploy step: replace with your real deploy command."
+          
+          
